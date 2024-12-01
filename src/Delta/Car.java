@@ -1,7 +1,7 @@
 package Delta;
 
 public class Car extends VehicleDecorator {
-    public Car(Vehicle vehicle) {
+    public Car(SampleVehicle sampleVehicle) {
         super(vehicle);
     }
 
@@ -13,16 +13,16 @@ public class Car extends VehicleDecorator {
         return decoratedVehicle.body()+"Capsule Shape Car";
     }
     public String wheels() {
-        return super.getDescription();
+        return decoratedVehicle.wheels()+("Cars wheel");
     }
 
     @Override
     public String engine() {
-        return super.engine();
+        return decoratedVehicle.engine()+("cars engine");
     }
 
     @Override
     public String assemblyProcess() {
-        return super.engine();
+        return super.engine()+("cars assemble process");
     }
 }
