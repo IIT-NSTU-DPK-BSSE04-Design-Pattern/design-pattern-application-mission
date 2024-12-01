@@ -1,0 +1,53 @@
+Command class:(10:34)
+smell: large class
+Refactoring:
+separate the class into multiple classes for store the specific method of related classes.
+
+mainEncode class:(10:51)
+smell: duplicate code and large class.
+Refactoring:
+duplicated code is found across Compress class, extract the common code into a shared method(in a different class).We can divide this large class and duplicate code can refactor into different class for maintaining costs, decreases the chances of bugs and makes the code more easier and readability.
+
+Compress class:(10:56)
+smell: duplicate code
+refactoring:
+we can refactor this class by writing such method like Compress(), compressFile(). After refactoring we can inherit that according to need.
+
+mainDecode class:(11:00)
+smell: duplicate code and large class.
+Refactoring:
+duplicated code is found across Decompress class, extract the common code into a shared method(in a different class).We can divide this large class and duplicate code can refactor into different class for maintaining costs, decreases the chances of bugs and makes the code more easier and readability.
+
+Decompress class:(11:03)
+smell: duplicate code
+refactoring:
+we can refactor this class by writing such method like Decompress(), decompressFile(). After refactoring we can inherit that according to need.
+
+Huffman class(11:05)
+smell: large class
+Refactoring: 
+Here we can create multiple class to maintain Single Responsibility Principle. Each class have its specific task to do and we create object according to need, it will reduce code redundancy.
+
+ProjectReader class:(11:10)
+smell: outdated comment
+refactoring: 
+We should clear the comments which are outdated.
+
+GrepContent class:(11:15)
+smell: Commented-Out Code: Leaving large blocks of commented-out code can cause confusion about whether that code is still needed or not.
+Refactoring: It’s not clear whether this code should be kept for future use, removed completely, or if it’s obsolete. 
+
+MethodFind class:(11:24)
+smell:Commented-out code, large inputs
+Refactoring: This block of commented-out line should be removed and this large input repetation may lead to stack overflow.
+
+Search class:(11:29)
+smell: outdated comment and large class.
+Refactoring: We should clear the comments which are outdated. this large file should be divided into multiple class.
+
+TfldfCalculate class:
+smell: outdated comment and large class.
+Refactoring: We should clear the comments which are outdated. this large file should be divided into multiple class.
+
+
+
