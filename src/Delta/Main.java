@@ -3,15 +3,28 @@ package Delta;
 public class Main {
     public static void main(String[] args) {
 
-        SampleVehicle sampleVehicle = new SampleVehicle();
+        Vehicle vehicle = new SampleVehicle();
 
-        sampleVehicle = new Car(sampleVehicle);
+        vehicle = new Car(vehicle);
+        System.out.println(vehicle.getDescription());
+        System.out.println(vehicle.body());
+        System.out.println(vehicle.engine());
+        System.out.println(vehicle.wheels());
+        System.out.println(vehicle.assemblyProcess());
 
-        System.out.println(car.getDescription());
-        System.out.println(car.body());
-        System.out.println(car.wheels());
-        System.out.println(car.engine());
-        System.out.println(car.assemblyProcess());
+        vehicle = new Truck(vehicle);
+        System.out.println(vehicle.getDescription());
+        System.out.println(vehicle.body());
+        System.out.println(vehicle.engine());
+        System.out.println(vehicle.wheels());
+        System.out.println(vehicle.assemblyProcess());
+
+        vehicle = new Motorcycle(vehicle);
+        System.out.println(vehicle.getDescription());
+        System.out.println(vehicle.body());
+        System.out.println(vehicle.engine());
+        System.out.println(vehicle.wheels());
+        System.out.println(vehicle.assemblyProcess());
 
 
     }

@@ -1,7 +1,7 @@
 package Delta;
 
 public class Car extends VehicleDecorator {
-    public Car(SampleVehicle sampleVehicle) {
+    public Car(Vehicle vehicle) {
         super(vehicle);
     }
 
